@@ -1,0 +1,53 @@
+@keyframes createNav {
+  0% {
+    transform: translateX(-200px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+@keyframes createNav2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.box {
+  font-family: "Iceberg", cursive;
+  font-family: "Fredoka One", cursive;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow: hidden;
+  align-items: flex-start;
+}
+
+.box .box__nav {
+  display: flex;
+  flex-direction: column;
+  animation: createNav 0.5s forwards;
+  cursor: pointer;
+  line-height: 50px;
+  width: 150px;
+  height: 800px;
+  background-color: skyblue;
+  align-items: center;
+}
+
+.box .box__content {
+  margin-left: 150px;
+  margin-top: 50px;
+  color: snow;
+}
+.box__nav .nav .nav__items a:hover {
+  animation: createNav2 1.2s forwards;
+}
+
+.box .box__nav .nav .nav__items a {
+  text-decoration: none;
+  color: snow;
+}

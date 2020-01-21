@@ -1,0 +1,14 @@
+include ../mixins/nav
+
+doctype html 
+html
+    head
+        title BLog by mingi
+        link(rel="stylesheet", href="/css/styles.css")
+        link(href="https://fonts.googleapis.com/css?family=Fredoka+One|Iceberg&display=swap" rel="stylesheet")
+    body
+        .box
+            .box__nav
+                +nav
+            .box__content
+                block content
