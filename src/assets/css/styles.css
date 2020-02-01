@@ -2,6 +2,16 @@
 @import "./reset.css";
 @import "./home.css";
 @import "./miniBoard.css";
+@import "./about.css";
+@import "./portBox.css";
+@keyframes initstart {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 
 body {
   background-image: url(../img/blue-snow.png);

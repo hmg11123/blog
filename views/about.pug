@@ -1,9 +1,31 @@
 extends layouts/main.pug
+include mixins/portBox
 
 block content
-    .testText Test About Pug Page Response.
-
-    ul.list
-        li.list__li HMG
-        li.list__li STS
-        li.list__li BHJ
+    .a_box
+        .a_box__col-1 
+            .col-1__left
+                .col-1__left__avatar
+            .col-1__right
+                table.a_table
+                    tr.table__row
+                        td.table__row__data NAME
+                        td.table__row__data : HOMG MIN GI
+                    tr.table__row
+                        td.table__row__data DEPT
+                        td.table__row__data : 4LEAF SOFTWARE
+                    tr.table__row
+                        td.table__row__data E-MAIL
+                        td.table__row__data : rpgitemk1234@naver.com
+                    tr.table__row
+                        td.table__row__data MOBILE
+                        td.table__row__data : 010-4923-3908
+                    tr.table__row
+                        td.table__row__data GIT
+                        td.table__row__data : https://github.com/hyj11123
+        .a_box__col-2
+            +portBox
+            +portBox
+            +portBox
+            +portBox
+            +portBox

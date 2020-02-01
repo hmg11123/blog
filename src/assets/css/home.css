@@ -8,12 +8,15 @@
 
 .h_box .h_box__col-1 {
   width: 1050x;
-  height: 50vh;
+  height: 1000px;
+  display: flex;
+  flex-direction: row;
+  color: rgb(255, 255, 255);
 }
 
 .h_box .h_box__col-2 {
   width: 1050px;
-  height: 50vh;
+  height: 1000px;
   display: flex;
   flex-direction: row;
 }
@@ -32,4 +35,41 @@
 .h_box__col-2 .col-2__sub-2 .sub-2__title {
   font-size: 20px;
   opacity: 0.6;
+}
+
+.h_box .h_box__col-1 .col-1__box-1 {
+  width: 190px;
+  height: 290px;
+  background-color: rgb(0, 195, 255, 0.3);
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  padding: 10px;
+  animation: initstart 1s forwards;
+}
+
+.h_box .h_box__col-1 .col-1__box-2 {
+  width: 190px;
+  height: 290px;
+  background-color: rgb(0, 195, 255, 0.3);
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 5px;
+  animation: initstart 2.5s forwards;
+}
+
+.h_box .h_box__col-1 .col-1__box-3 {
+  width: 190px;
+  height: 290px;
+  background-color: rgb(0, 195, 255, 0.3);
+  border-radius: 7px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 8px 16px -8px,
+    rgba(0, 0, 0, 0.024) 0px -6px 16px -6px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-left: 200px;
+  animation: initstart 4s forwards;
 }

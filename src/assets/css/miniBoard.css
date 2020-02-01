@@ -22,7 +22,7 @@
 }
 
 .mini .mini__tbody tr:nth-child(even) {
-  background-color: rgb(124, 204, 236, 0.5);
+  background-color: rgba(124, 204, 236, 0.5);
 }
 
 .mini .mini__tbody tr:hover {
