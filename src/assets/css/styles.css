@@ -4,6 +4,8 @@
 @import "./miniBoard.css";
 @import "./about.css";
 @import "./portBox.css";
+@import "./post.css";
+@import "./write.css";
 @keyframes initstart {
   0% {
     opacity: 0;

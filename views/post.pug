@@ -1,9 +1,15 @@
 extends layouts/main.pug
 
 block content
-    .testText Test Post Pug Page Response.
-
-    ul.list
-        li.list__li HMG
-        li.list__li STS
-        li.list__li BHJ
+    input.writeBtn#writeBtn-js(type="button" value="글 작성하기" onclick="javascript:writeBtnHandler()")
+    each post in postList
+        .postBox
+            .postBox__up
+                .postBox__up__title= post.title
+                .postBox__down__date= post.date
+            .postBox__down= post.desc
+            .postBox__footer
+                form(action="/delete" method="post")
+                    input(type="hidden" value=`${post.id}` name="id")
+                    input.footer__btn(type="button" value="삭제" onclick=`javascript:delBtnHander(this)`)
+    form(action="/write", method="get", id="writeFrm-js")

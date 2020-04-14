@@ -1,0 +1,43 @@
+.write_css {
+  display: flex;
+  flex-direction: row;
+  width: 1050px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  color: rgb(59, 59, 59);
+}
+
+.write_css .title_area,
+.write_css .desc_area {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  width: 350px;
+}
+
+.write_css .title_area input,
+.write_css .desc_area input {
+  outline: none;
+  border: none;
+  border-bottom: 2px solid black;
+  padding: 10px;
+  background: none;
+}
+
+.write_css .btn_area {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.write_css .btn_area input {
+  outline: none;
+  border: none;
+  background: none;
+  border-radius: 5px;
+  background-color: rgb(59, 59, 59);
+  color: snow;
+  cursor: pointer;
+}
